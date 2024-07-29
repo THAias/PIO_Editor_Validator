@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>dfefc934-bf53-4cd2-9c05-992062378f2a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Firely.Fhir.Validation.Compilation.Tests.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)FhirTestCases\**" />
+    <Content Include="$(MSBuildThisFileDirectory)TestData\DocumentComposition\manifest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)TestData\DocumentComposition\patient-clinicalTrial.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)xunit.runner.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AssemblyInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicSchemaBuilderTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\CardinalityBuilderTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\RegExBuilderTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\ContentReferenceBuilderTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\FhirPathBuilderTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\MaxLengthBuilderTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CommonTypeRefComponentTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExtensionSchemaValidationTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FhirTests\ITestValidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FhirTests\JsonAsserter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FhirTests\Manifest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FhirTests\TestCaseRunner.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FhirTests\ValidationManifestDataSourceAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FhirTests\ValidationManifestTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ValidationDemoTests.cs" />
+    <Compile Include="..\Firely.Fhir.Validation.Compilation.Tests.Shared\FhirTests\DotNetValidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IsExternalInit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ResourceSchemaValidationTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ValidatorHighLevelApiTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Support\ScopedNodeOnDictionaryTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\SchemaBuilderFixture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SimpleValidationsTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SlicingSchemaConverterTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Support\FluentAssertionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TestProfileArtifactSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\TypeReferenceBuilderTests.cs" />
+  </ItemGroup>
+</Project>

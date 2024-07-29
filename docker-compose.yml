@@ -1,0 +1,11 @@
+services:
+    validator:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        environment:
+            - "ASPNETCORE_HTTP_PORTS=5212"
+        container_name: validator
+        ports:
+            - "5212:5212"
+

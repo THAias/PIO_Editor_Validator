@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>7794c7d2-ea50-405d-a61a-23f8ecf4228b</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Firely.Fhir.Validation.Compilation.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ElementConversionMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\AssemblyInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilderExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\BaseSchemaBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\CardinalityBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\ContentReferenceBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\FhirPathBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\MaxValueBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\MinValueBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\RegexBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\BindingBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\StandardBuilders.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\CanonicalBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\PatternBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\FixedBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\MaxLengthBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilders\TypeReferenceBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CommonTypeRefComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DiscriminatorFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ISchemaBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IsExternalInit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SchemaBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CommonTypeRefComponentExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StructureDefinitionCorrectionsResolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StructureDefinitionToElementSchemaResolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SubschemaCollector.cs" />
+  </ItemGroup>
+</Project>

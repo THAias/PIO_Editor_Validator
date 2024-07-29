@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  
+  <Import Project="..\..\firely-validator-api-tests.props" />
+
+  <PropertyGroup>
+    <AssemblyName>Firely.Fhir.Validation.Tests</AssemblyName>
+  </PropertyGroup>
+ 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Firely.Fhir.Validation\Firely.Fhir.Validation.csproj" />
+    <ProjectReference Include="..\Benchmarks\Benchmarks.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="xunit.runner.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JunitXml.TestLogger" Version="4.0.254" />
+  </ItemGroup>
+
+</Project>

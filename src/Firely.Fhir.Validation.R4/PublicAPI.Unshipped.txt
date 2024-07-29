@@ -1,0 +1,41 @@
+﻿#nullable enable
+Firely.Fhir.Validation.R4.PIOEditorValidator
+Firely.Fhir.Validation.R4.PIOEditorValidator.PIOEditorValidator() -> void
+Firely.Fhir.Validation.R4.ProcessValidationSource
+Firely.Fhir.Validation.R4.ProcessValidationSource.ProcessValidationSource() -> void
+Firely.Fhir.Validation.R4.ValidationResult
+Firely.Fhir.Validation.R4.ValidationResult.errors.get -> string![]!
+Firely.Fhir.Validation.R4.ValidationResult.errors.set -> void
+Firely.Fhir.Validation.R4.ValidationResult.filteredErrorsPioSmallRelated.get -> string![]?
+Firely.Fhir.Validation.R4.ValidationResult.filteredErrorsPioSmallRelated.set -> void
+Firely.Fhir.Validation.R4.ValidationResult.filteredErrorsSpecificationRelated.get -> string![]?
+Firely.Fhir.Validation.R4.ValidationResult.filteredErrorsSpecificationRelated.set -> void
+Firely.Fhir.Validation.R4.ValidationResult.filteredErrorsValidatorRelated.get -> string![]?
+Firely.Fhir.Validation.R4.ValidationResult.filteredErrorsValidatorRelated.set -> void
+Firely.Fhir.Validation.R4.ValidationResult.filteredWarningsPioSmallRelated.get -> string![]?
+Firely.Fhir.Validation.R4.ValidationResult.filteredWarningsPioSmallRelated.set -> void
+Firely.Fhir.Validation.R4.ValidationResult.filteredWarningsSpecificationRelated.get -> string![]?
+Firely.Fhir.Validation.R4.ValidationResult.filteredWarningsSpecificationRelated.set -> void
+Firely.Fhir.Validation.R4.ValidationResult.filteredWarningsValidatorRelated.get -> string![]?
+Firely.Fhir.Validation.R4.ValidationResult.filteredWarningsValidatorRelated.set -> void
+Firely.Fhir.Validation.R4.ValidationResult.numberOfErrors.get -> int
+Firely.Fhir.Validation.R4.ValidationResult.numberOfErrors.set -> void
+Firely.Fhir.Validation.R4.ValidationResult.numberOfWarnings.get -> int
+Firely.Fhir.Validation.R4.ValidationResult.numberOfWarnings.set -> void
+Firely.Fhir.Validation.R4.ValidationResult.overallResult.get -> string!
+Firely.Fhir.Validation.R4.ValidationResult.overallResult.set -> void
+Firely.Fhir.Validation.R4.ValidationResult.totalFilteredErrors.get -> int
+Firely.Fhir.Validation.R4.ValidationResult.totalFilteredErrors.set -> void
+Firely.Fhir.Validation.R4.ValidationResult.totalFilteredWarnings.get -> int
+Firely.Fhir.Validation.R4.ValidationResult.totalFilteredWarnings.set -> void
+Firely.Fhir.Validation.R4.ValidationResult.ValidationResult() -> void
+Firely.Fhir.Validation.R4.ValidationResult.warnings.get -> string![]!
+Firely.Fhir.Validation.R4.ValidationResult.warnings.set -> void
+Firely.Fhir.Validation.ValidationSettingsExtensions
+Firely.Fhir.Validation.Validator
+Firely.Fhir.Validation.Validator.Validate(Hl7.Fhir.ElementModel.ElementNode! instance, string? profile = null) -> Hl7.Fhir.Model.OperationOutcome!
+Firely.Fhir.Validation.Validator.Validate(Hl7.Fhir.Model.Resource! instance, string? profile = null) -> Hl7.Fhir.Model.OperationOutcome!
+Firely.Fhir.Validation.Validator.Validator(Hl7.Fhir.Specification.Source.IAsyncResourceResolver! resourceResolver, Hl7.Fhir.Specification.Terminology.ICodeValidationTerminologyService! terminologyService, Firely.Fhir.Validation.IExternalReferenceResolver? referenceResolver = null, Firely.Fhir.Validation.ValidationSettings? settings = null) -> void
+static Firely.Fhir.Validation.R4.PIOEditorValidator.validate(string! xmlString, bool calledFromAPI) -> Firely.Fhir.Validation.R4.ValidationResult!
+static Firely.Fhir.Validation.R4.ProcessValidationSource.processFiles(string! pathToFiles, bool overwriteFiles = true) -> void
+static Firely.Fhir.Validation.ValidationSettingsExtensions.SetSkipConstraintValidation(this Firely.Fhir.Validation.ValidationSettings! vc, bool skip) -> void
